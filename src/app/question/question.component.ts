@@ -7,7 +7,7 @@ import { MessageService } from '../message.service';
   templateUrl: './question.component.html',
   styles: [`h1 { font-family: Lato; }`],
 })
-export class QuestionComponent {
+export class QuestionComponent implements OnInit {
   constructor(public messageService: MessageService) {}
 
   enableQuestion = true;
@@ -32,10 +32,22 @@ export class QuestionComponent {
   }
 
   ngOnInit(): void {
-  
+    this.enableQuestion = true;
+    this.question_text = 'some text 1';
+
+    this.previousIndex = 0;
+    this.index = 0;
+    this.cars = [
+      { id: 1, name: 'BMW Hyundai' },
+      { id: 2, name: 'Kia Tata' },
+      { id: 3, name: 'Volkswagen Ford' },
+      { id: 4, name: 'Renault Audi' },
+      { id: 5, name: 'Mercedes Benz Skoda' },
+    ];
+
+    this.selected = [];
+    this.selections = [[], [], []];
   }
-
-
 
   getCurrentIndex() {
     if (this.index < this.question_list.length - 1) {

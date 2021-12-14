@@ -11,6 +11,8 @@ export class MessageService {
   hideAll() {
     this.isQuestionActive = false;
     this.isConfigActive = false;
+    this.isDataSourceActive = false;
+    this.isUploadActive = false;
   }
 
   show(option) {

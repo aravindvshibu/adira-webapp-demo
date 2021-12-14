@@ -10,6 +10,7 @@ import { QuestionComponent } from './question/question.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { ModuleSelectionComponent } from './module-selection/module-selection.component';
 import { DataSourceComponent } from './data-source/data-source.component';
+import { UploadComponent } from './upload/upload.component';
 @NgModule({
   imports: [BrowserModule, FormsModule, NgSelectModule],
   declarations: [
@@ -20,6 +21,7 @@ import { DataSourceComponent } from './data-source/data-source.component';
     StepsComponent,
     ConfigurationComponent,
     DataSourceComponent,
+    UploadComponent,
   ],
   bootstrap: [AppComponent],
 })

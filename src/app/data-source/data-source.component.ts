@@ -34,5 +34,10 @@ export class DataSourceComponent implements OnInit {
     this.resetAll();
     this.sftp = 'squareselected';
   }
-  ngOnInit() {}
+  ngOnInit() {
+    this.azure = 'square';
+    this.s3 = 'square';
+    this.local = 'square';
+    this.sftp = 'square';
+  }
 }
