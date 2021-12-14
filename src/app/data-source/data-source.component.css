@@ -2,7 +2,16 @@
   height: 100px;
   width: 100px;
   background-color: rgb(98, 205, 224);
-  border-color: rgb(235, 18, 18);
+
+  border-width: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+.squareselected {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(60, 21, 167);
+
   border-width: 5px;
   padding: 5px;
   margin: 10px;
