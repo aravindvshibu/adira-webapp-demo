@@ -6,6 +6,7 @@
     <div class="content">
       <question *ngIf="messageService.isQuestionActive"></question>
       <configuration *ngIf="messageService.isConfigActive"></configuration>
+      <data-source *ngIf="messageService.isDataSourceActive"></data-source>
       <!-- <app-module-selection> </app-module-selection> -->
     </div>
   </div>

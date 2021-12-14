@@ -9,6 +9,7 @@ import { StepsComponent } from './steps/steps.component';
 import { QuestionComponent } from './question/question.component';
 import { ConfigurationComponent } from './configuration/configuration.component';
 import { ModuleSelectionComponent } from './module-selection/module-selection.component';
+import { DataSourceComponent } from './data-source/data-source.component';
 @NgModule({
   imports: [BrowserModule, FormsModule, NgSelectModule],
   declarations: [
@@ -18,6 +19,7 @@ import { ModuleSelectionComponent } from './module-selection/module-selection.co
     ModuleSelectionComponent,
     StepsComponent,
     ConfigurationComponent,
+    DataSourceComponent,
   ],
   bootstrap: [AppComponent],
 })

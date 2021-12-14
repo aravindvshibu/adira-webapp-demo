@@ -9,6 +9,7 @@ export class StepsComponent implements OnInit {
   constructor(private messageService: MessageService) {}
 
   manageStepClicks(sel: string) {
+    console.log(sel);
     this.messageService.show(sel);
   }
 
