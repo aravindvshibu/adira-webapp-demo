@@ -5,4 +5,9 @@
   <div [ngClass]="sftp" (click)="sftpActive()">SFTP</div>
 </div>
 
-<input type="button" value="Next" (click)="gotoUploadSetting()" />
+<input
+  type="button"
+  value="Next"
+  (click)="gotoUploadSetting()"
+  [disabled]="!next"
+/>

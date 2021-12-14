@@ -30,5 +30,11 @@ export class StepsComponent implements OnInit {
       ? 'container__title_selected'
       : 'container__title';
   }
+
+  statsAndConfirmationClass() {
+    return this.messageService.isStatsConfirmationActive
+      ? 'container__title_selected'
+      : 'container__title';
+  }
   ngOnInit() {}
 }

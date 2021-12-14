@@ -23,7 +23,7 @@ import { StatsConfirmationComponent } from './stats-confirmation/stats-confirmat
     ConfigurationComponent,
     DataSourceComponent,
     UploadComponent,
-    // StatsConfirmationComponent,
+    StatsConfirmationComponent,
   ],
   bootstrap: [AppComponent],
 })

@@ -11,6 +11,8 @@ export class DataSourceComponent implements OnInit {
   s3 = 'square';
   local = 'square';
   sftp = 'square';
+  next = false;
+  selected = '';
 
   resetAll() {
     this.azure = 'square';
@@ -21,23 +23,30 @@ export class DataSourceComponent implements OnInit {
   localActive() {
     this.resetAll();
     this.local = 'squareselected';
+    this.next = true;
+    this.selected = 'local';
   }
   s3Active() {
     this.resetAll();
     this.s3 = 'squareselected';
+    this.next = true;
+    this.selected = 's3';
   }
   azureActive() {
     this.resetAll();
     this.azure = 'squareselected';
+    this.next = true;
+    this.selected = 'azure';
   }
   sftpActive() {
     this.resetAll();
     this.sftp = 'squareselected';
+    this.next = true;
+    this.selected = 'sftp';
   }
 
   gotoUploadSetting() {
-
-    this.messageService.show('isUploadActive')
+    this.messageService.show('isUploadActive');
   }
 
   constructor(private messageService: MessageService) {}
@@ -47,5 +56,6 @@ export class DataSourceComponent implements OnInit {
     this.s3 = 'square';
     this.local = 'square';
     this.sftp = 'square';
+    this.next = false;
   }
 }
