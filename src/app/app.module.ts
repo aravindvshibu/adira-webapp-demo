@@ -11,6 +11,7 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { ModuleSelectionComponent } from './module-selection/module-selection.component';
 import { DataSourceComponent } from './data-source/data-source.component';
 import { UploadComponent } from './upload/upload.component';
+import { StatsConfirmationComponent } from './stats-confirmation/stats-confirmation.component';
 @NgModule({
   imports: [BrowserModule, FormsModule, NgSelectModule],
   declarations: [
@@ -22,6 +23,7 @@ import { UploadComponent } from './upload/upload.component';
     ConfigurationComponent,
     DataSourceComponent,
     UploadComponent,
+    StatsConfirmationComponent,
   ],
   bootstrap: [AppComponent],
 })

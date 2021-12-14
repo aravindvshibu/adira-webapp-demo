@@ -6,6 +6,7 @@ export class MessageService {
   isConfigActive = false;
   isDataSourceActive = false;
   isUploadActive = false;
+  isStatsConfirmationActive = false;
   constructor() {}
 
   hideAll() {
@@ -13,6 +14,7 @@ export class MessageService {
     this.isConfigActive = false;
     this.isDataSourceActive = false;
     this.isUploadActive = false;
+    this.isStatsConfirmationActive = false;
   }
 
   show(option) {
