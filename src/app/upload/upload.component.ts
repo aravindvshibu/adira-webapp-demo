@@ -7,9 +7,16 @@ import { MessageService } from '../message.service';
   styleUrls: ['./upload.component.css'],
 })
 export class UploadComponent implements OnInit {
+  next = false;
   constructor(private messageService: MessageService) {}
   gotoDataconfiguration() {
     this.messageService.show('isQuestionActive');
   }
-  ngOnInit() {}
+
+  enableNext() {
+    this.next = true;
+  }
+  ngOnInit() {
+    this.next = false;
+  }
 }
