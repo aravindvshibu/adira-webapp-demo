@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'upload',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./upload.component.css'],
 })
 export class UploadComponent implements OnInit {
-  constructor() {}
-
+  constructor(private messageService: MessageService) {}
+  gotoDataconfiguration() {
+    this.messageService.show('isQuestionActive');
+  }
   ngOnInit() {}
 }

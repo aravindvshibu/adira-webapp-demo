@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'data-source',
@@ -10,7 +11,6 @@ export class DataSourceComponent implements OnInit {
   s3 = 'square';
   local = 'square';
   sftp = 'square';
-  constructor() {}
 
   resetAll() {
     this.azure = 'square';
@@ -34,6 +34,14 @@ export class DataSourceComponent implements OnInit {
     this.resetAll();
     this.sftp = 'squareselected';
   }
+
+  gotoUploadSetting() {
+
+    this.messageService.show('isUploadActive')
+  }
+
+  constructor(private messageService: MessageService) {}
+
   ngOnInit() {
     this.azure = 'square';
     this.s3 = 'square';
