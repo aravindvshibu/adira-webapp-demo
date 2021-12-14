@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class MessageService {
+  enableLandingPage = true;
+  enableInnovationAnalytics = false;
+
   isQuestionActive = false;
   isConfigActive = false;
   isDataSourceActive = false;

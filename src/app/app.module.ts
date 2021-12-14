@@ -12,6 +12,7 @@ import { ModuleSelectionComponent } from './module-selection/module-selection.co
 import { DataSourceComponent } from './data-source/data-source.component';
 import { UploadComponent } from './upload/upload.component';
 import { StatsConfirmationComponent } from './stats-confirmation/stats-confirmation.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 @NgModule({
   imports: [BrowserModule, FormsModule, NgSelectModule],
   declarations: [
@@ -24,6 +25,7 @@ import { StatsConfirmationComponent } from './stats-confirmation/stats-confirmat
     DataSourceComponent,
     UploadComponent,
     StatsConfirmationComponent,
+    LandingPageComponent,
   ],
   bootstrap: [AppComponent],
 })

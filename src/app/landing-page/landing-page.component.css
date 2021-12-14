@@ -1,0 +1,12 @@
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(25, 4, 27);
+
+  border-width: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+.landing {
+  display: flex;
+}
