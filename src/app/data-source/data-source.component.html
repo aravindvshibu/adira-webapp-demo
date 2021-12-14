@@ -1,8 +1,6 @@
 <div class="datasource">
-
-  <div *ngclass="square">Local storage</div>
-  <div class="square">Azure</div>
-  <div class="square">s3</div>
-  <div class="square">SFTP</div>
-
+  <div [ngClass]="azure" (click)="azureActive()">Azure</div>
+  <div [ngClass]="local" (click)="localActive()">Local Storage</div>
+  <div [ngClass]="s3" (click)="s3Active()">s3</div>
+  <div [ngClass]="sftp" (click)="sftpActive()">SFTP</div>
 </div>
