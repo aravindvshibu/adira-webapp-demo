@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
 export class MessageService {
   isQuestionActive = false;
   isConfigActive = false;
-  isDataSourceActive = true;
-  isUploadActive = false;
+  isDataSourceActive = false;
+  isUploadActive = true;
   constructor() {}
 
   hideAll() {

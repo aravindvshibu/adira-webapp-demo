@@ -13,5 +13,22 @@ export class StepsComponent implements OnInit {
     this.messageService.show(sel);
   }
 
+  dataSourceClass() {
+    return this.messageService.isDataSourceActive
+      ? 'container__title_selected'
+      : 'container__title';
+  }
+
+  uploadClass() {
+    return this.messageService.isUploadActive
+      ? 'container__title_selected'
+      : 'container__title';
+  }
+
+  dataConfigurationClass() {
+    return this.messageService.isQuestionActive
+      ? 'container__title_selected'
+      : 'container__title';
+  }
   ngOnInit() {}
 }

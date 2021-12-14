@@ -50,20 +50,26 @@
   width: 32px;
 }
 
-.container__circle:hover {
+.container__circle_selected {
   /* Rounded border */
-  background-color: rgb(158, 10, 10);
+  background-color: rgb(170, 170, 170);
   border-radius: 9999px;
-  cursor: pointer;
 
   /* Size */
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
 }
 
 .container__title {
   /* Take available width */
   padding: 0.5rem;
+  flex: 1;
+}
+
+.container__title_selected {
+  /* Take available width */
+  padding: 0.5rem;
+  font-weight: bold;
   flex: 1;
 }
 
