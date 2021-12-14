@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class MessageService {
-  isQuestionActive = true;
+  isQuestionActive = false;
   isConfigActive = false;
-  isDataSourceActive = false;
+  isDataSourceActive = true;
   isUploadActive = false;
   isStatsConfirmationActive = false;
   constructor() {}
