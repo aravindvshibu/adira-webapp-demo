@@ -9,4 +9,7 @@
 }
 .landing {
   display: flex;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
