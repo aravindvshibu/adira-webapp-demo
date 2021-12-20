@@ -8,6 +8,10 @@ import { MessageService } from '../message.service';
 })
 export class LandingPageComponent implements OnInit {
   constructor(private messageService: MessageService) {}
+  enableInnovation() {
+    this.messageService.enableLandingPage = false;
+    this.messageService.enableInnovationAnalytics = true;
+  }
 
   ngOnInit() {}
 }

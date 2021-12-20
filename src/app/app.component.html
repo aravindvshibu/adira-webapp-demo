@@ -1,8 +1,10 @@
+<div class="topbar">
+  <div class="adiralogo">Adira Analytics</div>
+</div>
+<div *ngIf="messageService.enableLandingPage">
+  <landing-page> </landing-page>
+</div>
 <div class="parent">
-  <div *ngIf="messageService.enableLandingPage">
-    <landing-page> </landing-page>
-  </div>
-
   <div *ngIf="messageService.enableInnovationAnalytics" class="outer-container">
     <div class="sidebar">
       <app-steps></app-steps>
