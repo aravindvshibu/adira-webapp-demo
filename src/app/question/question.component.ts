@@ -5,7 +5,7 @@ import { MessageService } from '../message.service';
 @Component({
   selector: 'question',
   templateUrl: './question.component.html',
-  styles: [`h1 { font-family: Lato; }`],
+  styleUrls: ['./question.component.css'],
 })
 export class QuestionComponent implements OnInit {
   constructor(public messageService: MessageService) {}
@@ -31,10 +31,20 @@ export class QuestionComponent implements OnInit {
 
   selected = [];
   selections = [[], [], []];
-
+  next = false;
   captureAnswerSelections() {
     this.selections[this.previousIndex] = this.selected;
     this.selected = this.selections[this.index];
+  }
+
+  shouldEnableConfirm() {
+    let count = 0;
+    for (let select1 in this.selections) {
+      console.log(select1.length);
+      select1.length > 0 ? count++ : 0;
+    }
+    this.next = count == this.selections.length ? true : false;
+    console.log(count);
   }
 
   ngOnInit(): void {
@@ -61,6 +71,9 @@ export class QuestionComponent implements OnInit {
     this.selections = [[], [], []];
   }
 
+  gotoStats() {
+    this.messageService.show('isStatsConfirmationActive');
+  }
   getCurrentIndex() {
     if (this.index < this.question_list.length - 1) {
       this.index++;
@@ -78,6 +91,7 @@ export class QuestionComponent implements OnInit {
       this.index = 0;
     }
     this.captureAnswerSelections();
+    this.shouldEnableConfirm();
   }
 
   decreaseIndex() {
@@ -88,6 +102,7 @@ export class QuestionComponent implements OnInit {
       this.index--;
     }
     this.captureAnswerSelections();
+    this.shouldEnableConfirm();
   }
 
   question_list = [

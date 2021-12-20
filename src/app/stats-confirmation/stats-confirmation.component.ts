@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stats-confirmation.component.css'],
 })
 export class StatsConfirmationComponent implements OnInit {
+  next = false;
+
   constructor() {}
 
   ngOnInit() {}

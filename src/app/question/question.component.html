@@ -12,3 +12,12 @@
   <button (click)="decreaseIndex()">Previous</button>
   <button (click)="increaseIndex()">Next</button>
 </div>
+<div class="confirm">
+  <input
+    type="button"
+    value="Confirm"
+    (click)="gotoStats()"
+    [disabled]="!next"
+    class="button-adira"
+  />
+</div>
