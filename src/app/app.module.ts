@@ -13,6 +13,7 @@ import { DataSourceComponent } from './data-source/data-source.component';
 import { UploadComponent } from './upload/upload.component';
 import { StatsConfirmationComponent } from './stats-confirmation/stats-confirmation.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ApiGenerateComponent } from './api-generate/api-generate.component';
 @NgModule({
   imports: [BrowserModule, FormsModule, NgSelectModule],
   declarations: [
@@ -26,6 +27,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     UploadComponent,
     StatsConfirmationComponent,
     LandingPageComponent,
+    ApiGenerateComponent,
   ],
   bootstrap: [AppComponent],
 })

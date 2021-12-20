@@ -36,5 +36,10 @@ export class StepsComponent implements OnInit {
       ? 'container__title_selected'
       : 'container__title';
   }
+  apiGeneratedClass() {
+    return this.messageService.isapiGeneratedActive
+      ? 'container__title_selected'
+      : 'container__title';
+  }
   ngOnInit() {}
 }
