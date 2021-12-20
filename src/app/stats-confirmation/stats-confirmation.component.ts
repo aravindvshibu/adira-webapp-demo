@@ -9,11 +9,11 @@ import { MessageService } from '../message.service';
 export class StatsConfirmationComponent implements OnInit {
   next = false;
 
-  constructor(private messageService:MessageService) {}
+  constructor(private messageService: MessageService) {}
 
   ngOnInit() {}
 
-  gotoApiGenerate(){
-    this.messageService.show('isUploadActive');
+  gotoApiGenerate() {
+    this.messageService.show('isapiGeneratedActive');
   }
 }

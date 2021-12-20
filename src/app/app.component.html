@@ -1,5 +1,5 @@
 <div class="topbar">
-  <div class="adiralogo">Adira Analytics</div>
+  <div class="adiralogo" (click)="returnToLandingPage()">Adira Analytics</div>
 </div>
 <div *ngIf="messageService.enableLandingPage">
   <landing-page> </landing-page>

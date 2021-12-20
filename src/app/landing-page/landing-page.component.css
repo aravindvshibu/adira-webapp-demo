@@ -11,6 +11,21 @@
   justify-content: center;
   text-align: center;
 }
+.square:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  border-width: 5px;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
 .landing {
   display: flex;
   padding: 10px;

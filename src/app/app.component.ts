@@ -9,4 +9,9 @@ import { MessageService } from './message.service';
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
   constructor(public messageService: MessageService) {}
+
+  returnToLandingPage() {
+    this.messageService.enableInnovationAnalytics = false;
+    this.messageService.enableLandingPage = true;
+  }
 }
