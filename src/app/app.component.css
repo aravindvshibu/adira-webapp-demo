@@ -24,6 +24,8 @@ p {
   width: 300px;
   background: #ffffff;
   padding: 1rem;
+  border-color: black;
+  border-width: 10px;
 }
 .content {
   min-width: 400px;
