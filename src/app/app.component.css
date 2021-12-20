@@ -29,7 +29,9 @@ p {
 }
 .content {
   min-width: 400px;
-  padding: 1rem;
+
+  padding: 50px;
+  padding-top: 200px;
 }
 
 .parent {
