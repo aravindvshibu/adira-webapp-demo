@@ -16,11 +16,14 @@ export class QuestionComponent implements OnInit {
   previousIndex = 0;
   index = 0;
   cars = [
-    { id: 1, name: 'BMW Hyundai' },
-    { id: 2, name: 'Kia Tata' },
-    { id: 3, name: 'Volkswagen Ford' },
-    { id: 4, name: 'Renault Audi' },
-    { id: 5, name: 'Mercedes Benz Skoda' },
+    { id: 1, name: 'BU/Region' },
+    { id: 2, name: 'Market' },
+    { id: 3, name: 'Sub-Region' },
+    { id: 4, name: 'Category' },
+    { id: 5, name: 'Brand' },
+    { id: 6, name: 'Product/Sku' },
+    { id: 7, name: 'Size' },
+    { id: 8, name: 'Material' },
   ];
 
   selected = [];
@@ -38,11 +41,14 @@ export class QuestionComponent implements OnInit {
     this.previousIndex = 0;
     this.index = 0;
     this.cars = [
-      { id: 1, name: 'BMW Hyundai' },
-      { id: 2, name: 'Kia Tata' },
-      { id: 3, name: 'Volkswagen Ford' },
-      { id: 4, name: 'Renault Audi' },
-      { id: 5, name: 'Mercedes Benz Skoda' },
+      { id: 1, name: 'BU/Region' },
+      { id: 2, name: 'Market' },
+      { id: 3, name: 'Sub-Region' },
+      { id: 4, name: 'Category' },
+      { id: 5, name: 'Brand' },
+      { id: 6, name: 'Product/Sku' },
+      { id: 7, name: 'Size' },
+      { id: 8, name: 'Material' },
     ];
 
     this.selected = [];
@@ -78,7 +84,7 @@ export class QuestionComponent implements OnInit {
     this.captureAnswerSelections();
   }
 
-  question_list = ['question1', 'question2', 'question3'];
+  question_list = ['Select parameters that define an innovation ', 'Select parameters for threshold calculation', 'question3'];
 
   getQuestion() {
     return this.question_list[this.index];
