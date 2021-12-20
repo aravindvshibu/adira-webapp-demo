@@ -24,6 +24,9 @@ export class QuestionComponent implements OnInit {
     { id: 6, name: 'Product/Sku' },
     { id: 7, name: 'Size' },
     { id: 8, name: 'Material' },
+    { id: 9, name: 'Month' },
+    { id: 10, name: 'Volume Sales' },
+    { id: 11, name: 'Value Sales' },
   ];
 
   selected = [];
@@ -49,6 +52,9 @@ export class QuestionComponent implements OnInit {
       { id: 6, name: 'Product/Sku' },
       { id: 7, name: 'Size' },
       { id: 8, name: 'Material' },
+      { id: 9, name: 'Month' },
+      { id: 10, name: 'Volume Sales' },
+      { id: 11, name: 'Value Sales' },
     ];
 
     this.selected = [];
@@ -84,7 +90,11 @@ export class QuestionComponent implements OnInit {
     this.captureAnswerSelections();
   }
 
-  question_list = ['Select parameters that define an innovation ', 'Select parameters for threshold calculation', 'question3'];
+  question_list = [
+    'Select parameters that define an innovation ',
+    'Select parameters for threshold calculation',
+    'Select time dimension',
+  ];
 
   getQuestion() {
     return this.question_list[this.index];

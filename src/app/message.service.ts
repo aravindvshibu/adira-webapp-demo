@@ -4,12 +4,11 @@ import { Injectable } from '@angular/core';
 export class MessageService {
   enableLandingPage = true;
   enableInnovationAnalytics = false;
-
   isQuestionActive = false;
   isConfigActive = false;
-  isDataSourceActive = false;
+  isDataSourceActive = true;
   isUploadActive = false;
-  isStatsConfirmationActive = true;
+  isStatsConfirmationActive = false;
   constructor() {}
 
   hideAll() {
