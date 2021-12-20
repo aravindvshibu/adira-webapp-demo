@@ -6,15 +6,37 @@
   border-width: 5px;
   padding: 5px;
   margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.square:hover {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(167, 188, 192);
+  border-width: 5px;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
 }
 .squareselected {
   height: 100px;
   width: 100px;
   background-color: rgb(60, 21, 167);
-
   border-width: 5px;
   padding: 5px;
   margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 .datasource {
   display: flex;
