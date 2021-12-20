@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'stats-confirmation',
@@ -8,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class StatsConfirmationComponent implements OnInit {
   next = false;
 
-  constructor() {}
+  constructor(private messageService:MessageService) {}
 
   ngOnInit() {}
+
+  gotoApiGenerate(){
+    this.messageService.show('isUploadActive');
+  }
 }

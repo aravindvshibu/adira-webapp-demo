@@ -65,6 +65,20 @@
             Stats & Confirmation
           </div>
         </div>
+        <div class="container__desc">...</div>
+      </li>
+      <li
+        class="container__item"
+        (click)="manageStepClicks('isapiGeneratedActive')"
+      >
+        <!-- The circle and title -->
+        <div class="container__top">
+          <!-- The circle -->
+          <div class="container__circle"></div>
+
+          <!-- The title -->
+          <div [ngClass]="apiGeneratedClass()">Generate Api</div>
+        </div>
       </li>
 
       <!-- Repeat other items -->
